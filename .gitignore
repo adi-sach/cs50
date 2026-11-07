@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Generated application databases
+birthdays/birthdays.db
+finance/finance.db
+project/habits.db
+
+# Flask session data
+finance/flask_session/
+
+# IDE files
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

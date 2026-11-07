@@ -1,0 +1,13 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Bubble sorted is fastest for the already sorted data
+
+
+sort2 uses: Merge Sort
+
+How do you know?: Merge sort time doesn't vary too much with the placement of the data and is the fastest method to sort data
+
+
+sort3 uses: Selection Sort
+
+How do you know?: Selection sort doesn't care about the placement of the data and time is relatively same for all three kinds of data

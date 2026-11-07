@@ -1,0 +1,16 @@
+Based on the calculated averages from songs.db for the user for the year 2018, with an average
+energy of 0.659, valence of 0.484 and danceability of 0.716, the listener's aura can be described as a mixture of
+fun as well as nuanced. The high danceability and low eneryg reflects a strong drive for groovy and vibey music and
+not overly aggressive. The lower valence suggests thats even though the music is danceable its not very high beat,
+but more introspective and calm.
+
+
+While these averages do provide a snapshopt of the listener's aura, they may not be an accurate representative of
+listener's personality completely. The dataset lacks data like, the amount of times a track has been listened to, the
+time of the day, or listening purpose. The categories based on which the listener's aura is being judged is also very broad
+as you can't really judge a person's whole personality based on the averages of just 3 categories while there is much more
+to a music.
+A rather more accurate way of judging someone's aura would be to also consider the amount of times a person played a certain
+song, when did he play it, did he go back to the song after a while or was it jsut part of the trend. Also taking into account
+the person's listening habits from more than one year would help capture the evolving preferences and result in a more
+robust audio aura.

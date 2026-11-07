@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Habit Tracker{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-bar">
+        <div class="left">
+            <a href="/analysis" class="nav-link">Analysis</a>
+        </div>
+
+        <div class="center">
+            <span class="username">Hello, {{ username }}</span>
+        </div>
+
+        <div class="right">
+            <a href="/add" class="nav-button">+ Add Habit</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="content">
+        {% block content %}{% endblock %}
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.habit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.habit form {
+    margin: 0;
+}
+
+.habit-name {
+    margin-left: 10px;
+}
+
+.add-form {
+    margin-top: 20px;
+    display: flex;
+}
+
+.add-form input {
+    flex: 1;
+    padding: 8px;
+}
+
+.add-form button {
+    padding: 8px 12px;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+}
+/* Reset-ish */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Top bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.username {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Navigation links */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-button {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+/* Page content */
+.content {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+.page-title {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.page-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.habit-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.habit-table th,
+.habit-table td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: center;
+}
+
+.habit-table th {
+    background-color: #f0f0f0;
+    position: sticky;
+    top: 0;
+}
+
+.habit-name {
+    font-weight: bold;
+    text-align: left;
+    background-color: #fafafa;
+    min-width: 140px;
+}
+
+.checkbox-cell {
+    width: 30px;
+}

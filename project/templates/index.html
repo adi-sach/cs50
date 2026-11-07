@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}Daily Habits{% endblock %}
+
+{% block content %}
+
+<h1 class="page-title">Daily Habits</h1>
+<p class="page-subtitle">{{ month }} {{ year }}</p>
+
+<div class="table-wrapper">
+    <table class="habit-table">
+        <thead>
+            <tr>
+                <th>Habit</th>
+                {% for day in days %}
+                    <th>{{ day }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for habit_id, habit in habit_data.items() %}
+                <tr>
+                    <td class="habit-name">{{ habit.name }}</td>
+
+                    {% for day in days %}
+                        <td class="checkbox-cell">
+                            {% if day == today_day %}
+                                <!-- Only today is editable -->
+                                <form action="/toggle" method="post">
+                                    <input type="hidden" name="habit_id" value="{{ habit_id }}">
+                                    <input type="checkbox"
+                                           onchange="this.form.submit()"
+                                           {% if habit.logs.get(day) == 1 %}checked{% endif %}>
+                                </form>
+
+                            {% elif day < today_day %}
+                                <!-- Past days: read-only -->
+                                <input type="checkbox"
+                                       disabled
+                                       {% if habit.logs.get(day) == 1 %}checked{% endif %}>
+
+                            {% else %}
+                                <!-- Future days: disabled -->
+                                <input type="checkbox" disabled>
+                            {% endif %}
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

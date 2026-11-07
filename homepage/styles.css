@@ -1,0 +1,17 @@
+.top-image {
+    width: 200px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.heading {
+    font-weight: 600;
+}
+
+.meme-image {
+    width: 400px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
